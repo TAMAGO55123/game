@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+body{
+    background-color: black;
+}
+div#textarea{
+    font-family: 'DotGothic16',sans-serif;
+    font-size: 30px;
+}
+div#effect{
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    
+}

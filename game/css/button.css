@@ -1,0 +1,35 @@
+
+.tn-custom01-front{
+    color: white;
+    
+    background-color: black;
+    width: 50%;
+    height: 60px;
+    font-size: 30px;
+    font-family: 'DotGothic16', sans-serif;
+    
+}
+#attack::before{
+    content: '\e902';
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    margin-right: 10px;
+    font-family: 'magic-icon';
+}
+#magic::before{
+    content: '\e900';
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    margin-right: 10px;
+    font-family: 'magic-icon';
+}
+#guard::before{
+    content: '\e901';
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    margin-right: 10px;
+    font-family: 'magic-icon';
+}
