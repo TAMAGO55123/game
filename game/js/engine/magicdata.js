@@ -1,0 +1,21 @@
+var magicdata=[
+    undefined,
+    {
+        "fireeasy_easy":{
+            "monster":true,
+            "damage":5,
+            "mp":2,
+            "color":'#d00'
+        },
+        "recovery_easy":{
+            "monster":false,
+            "recovery":true,
+            "recovery_hp":10,
+            "mp":2,
+            "color":'#fff'
+        }
+    },
+    {},
+    {},
+    {},
+];

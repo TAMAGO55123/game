@@ -1,6 +1,7 @@
 var button={};
 button.event={};
 var stagedata={};
+var buttonfunction={};
 
 stagedata.stage=document.createElement('div');
 stagedata.stage.style.width='100%';
@@ -16,21 +17,25 @@ button.attack=document.createElement('button');
 button.attack.id='attack';
 button.attack.classList.add('tn-custom01-front');
 button.attack.innerHTML='戦う';
+button.attack.onclick=buttonfunction.attack();
 
 button.magic=document.createElement('button');
 button.magic.id='magic';
 button.magic.classList.add('tn-custom01-front');
 button.magic.innerHTML='魔法';
+button.magic.onclick=buttonfunction.magic();
 
 button.guard=document.createElement('button');
 button.guard.id='guard';
 button.guard.classList.add('tn-custom01-front');
 button.guard.innerHTML='防御';
+button.guard.onclick=buttonfunction.guard();
 
 button.mydata=document.createElement('button');
 button.mydata.id='mydata';
 button.mydata.classList.add('tn-custom01-front');
 button.mydata.innerHTML='スキル';
+button.mydata.onclick=buttonfunction.mydata();
 
 var br=document.createElement('sb');
 var brscriptdata=document.createElement('script');
