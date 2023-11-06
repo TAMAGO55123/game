@@ -13,7 +13,7 @@ addEventListener('load',async function(){
         window.alert('初期設定を行います。');
         namedata=prompt('名前を入力してください。');
         localsave({
-            "name":name,
+            "name":namedata,
             "level":1,
             "attack":50,
             "guard":50,
