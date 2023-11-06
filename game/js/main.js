@@ -34,6 +34,4 @@ addEventListener('load',async function(){
     xp=localdataload.xp;
     
     
-    
-
 });

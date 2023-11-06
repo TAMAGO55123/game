@@ -27,6 +27,11 @@ button.guard.id='guard';
 button.guard.classList.add('tn-custom01-front');
 button.guard.innerHTML='防御';
 
+button.mydata=document.createElement('button');
+button.mydata.id='mydata';
+button.mydata.classList.add('tn-custom01-front');
+button.mydata.innerHTML='スキル';
+
 var br=document.createElement('sb');
 var brscriptdata=document.createElement('script');
 brscriptdata.src='/lib/br.js';
@@ -37,4 +42,5 @@ document.querySelector('div#button').appendChild(button.attack);
 document.querySelector('div#button').appendChild(button.magic);
 document.querySelector('div#button').appendChild(br);
 document.querySelector('div#button').appendChild(button.guard);
+document.querySelector('div#button').appendChild(button.mydata);
 document.querySelector('div#button').appendChild(brscriptdata);
