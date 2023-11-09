@@ -2,9 +2,9 @@ var button={};
 button.event={};
 var stagedata={};
 var buttonfunction={
-    "attack":undefined,
-    "magic":undefined,
-    "guard":undefined
+    "attack":function(){},
+    "magic":function(){},
+    "guard":function(){}
 };
 
 stagedata.stage=document.createElement('div');
