@@ -1,7 +1,11 @@
 var button={};
 button.event={};
 var stagedata={};
-var buttonfunction={};
+var buttonfunction={
+    "attack":undefined,
+    "magic":undefined,
+    "guard":undefined
+};
 
 stagedata.stage=document.createElement('div');
 stagedata.stage.style.width='100%';
