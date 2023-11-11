@@ -33,5 +33,6 @@ addEventListener('load',async function(){
     mp=localdataload.mp;
     xp=localdataload.xp;
     
+    //レベルに応じてモンスターを出す
     
 });
