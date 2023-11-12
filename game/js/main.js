@@ -6,6 +6,7 @@ var guard;
 var hp;
 var mp;
 var xp;
+var themmonstar;
 addEventListener('load',async function(){
     var localdataload=localload();
     

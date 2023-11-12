@@ -8,7 +8,7 @@ var monsterdata={};
 //magic=魔法（ない場合はnone）
 monsterdata.easy={
     "slime":{
-        "img":'/game/img/monter/easy/slime.png',
+        "img":'/game/game/img/monter/easy/slime.png',
         "name":'スライム',
         "attack":5,
         "guard":5,
