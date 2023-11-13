@@ -35,5 +35,7 @@ addEventListener('load',async function(){
     xp=localdataload.xp;
     
     //レベルに応じてモンスターを出す
+    themmonstar=monsterplus(monsterdata,monsterimg,level);
+    await textdot(`${themmonstar.name}が現れた! ステータス情報.... HP:${themmonstar.hp},貰える経験値:${themmonstar.xp},攻撃力:${themmonstar.attack},防御力:${themmonstar.guard}です!`,stagedata.textarea,50,30);
     
 });

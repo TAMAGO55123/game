@@ -1,3 +1,4 @@
+const WaitForClick = () => new Promise(resolve => document.addEventListener("keydown", resolve));
 /**
  * 
  * @param {string} text
@@ -5,7 +6,7 @@
  * @param {number} time 
  * @param {TextSizepx} textpx 
  */
-function textdot(text,textarea,time,textpx){
+async function textdot(text,textarea,time,textpx){
     let data2=text.split('');
     let data3=(window.innerWidth-(textpx*2))/textpx;
     let data4='';
@@ -13,6 +14,8 @@ function textdot(text,textarea,time,textpx){
     for (let a = 0; a < data5; a++) {
         data4 = data4+data5[a];
         textarea.innerHTML=data4;
-        wait(time);
+        await wait(time);
     }
+    await WaitForClick();
+    textarea.innerHTML='';
 }

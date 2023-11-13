@@ -6,13 +6,16 @@ var monsterdata={};
 //guard=防御力
 //xp=経験値（貰える数）
 //magic=魔法（ない場合はnone）
-monsterdata.easy={
-    "slime":{
+monsterdata.easy=[
+    {
         "img":'/game/game/img/monter/easy/slime.png',
         "name":'スライム',
         "attack":5,
         "guard":5,
+        "hp":20,
         "xp":10,
         "magic":'none'
-    }
-};
+    },
+];
+monsterdata.midium=[];
+monsterdata.hard=[];
