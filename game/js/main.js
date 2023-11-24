@@ -12,7 +12,7 @@ addEventListener('load',async function(){
     
     if(localdataload==undefined){
         window.alert('初期設定を行います。');
-        namedata=prompt('名前を入力してください。');
+        namedata=await prompt('名前を入力してください。');
         localsave({
             "name":namedata,
             "level":1,
@@ -22,7 +22,7 @@ addEventListener('load',async function(){
             "mp":10,
             "xp":1
         });
-        localdataload=localload();
+        localdataload=await localload();
     }
     
     
@@ -35,7 +35,7 @@ addEventListener('load',async function(){
     xp=localdataload.xp;
     
     //レベルに応じてモンスターを出す
-    themmonstar=monsterplus(monsterdata,monsterimg,level);
+    themmonstar= await monsterplus(monsterdata,monsterimg,level);
     await textdot(`${themmonstar.name}が現れた! ステータス情報.... HP:${themmonstar.hp},貰える経験値:${themmonstar.xp},攻撃力:${themmonstar.attack},防御力:${themmonstar.guard}です!`,stagedata.textarea,50,30);
     
 });
