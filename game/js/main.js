@@ -7,6 +7,7 @@ var hp;
 var mp;
 var xp;
 var themmonstar;
+
 addEventListener('load',async function(){
     var localdataload=localload();
     
@@ -33,9 +34,15 @@ addEventListener('load',async function(){
     hp=localdataload.hp;
     mp=localdataload.mp;
     xp=localdataload.xp;
+
+    monsterimg=document.createElement('img');
+    monsterimg.id='monsterimg';
+    monsterid=monsterimg.id;
+    document.appendChild(monsterimg);
+    
     
     //レベルに応じてモンスターを出す
-    themmonstar= await monsterplus(monsterdata,monsterimg,level);
+    themmonstar= await monsterplus(monsterdata,monsterid,level);
     await textdot(`${themmonstar.name}が現れた! ステータス情報.... HP:${themmonstar.hp},貰える経験値:${themmonstar.xp},攻撃力:${themmonstar.attack},防御力:${themmonstar.guard}です!`,stagedata.textarea,50,30);
     
 });

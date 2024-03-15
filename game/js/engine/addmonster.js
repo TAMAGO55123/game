@@ -6,10 +6,10 @@ stagedata.stage.appendChild(monsterimg);
 /**
  * モンスターを追加します。
  * @param {Object} monsterdata
- * @param {HTMLImageElement} imgelement 
+ * @param {string} imgid 
  * @param {number} level 
  */
-function monsterplus(monsterdata,imgelement,level){
+function monsterplus(monsterdata,imgid,level){
     let monster;
     if(level<15){
         monster = monsterdata.easy[Math.floor(Math.random*(monsterdata.easy.length))];
@@ -20,6 +20,7 @@ function monsterplus(monsterdata,imgelement,level){
     else if(level<=30){
         monster = monsterdata.hard[Math.floor(Math.random*(monsterdata.hard.length))];
     }
+    let imgelement=document.querySelector(`img#${imgid}`);
     imgelement.src=monster.img;
     return monster;
 }
