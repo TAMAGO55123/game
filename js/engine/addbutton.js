@@ -9,7 +9,7 @@ stagedata.stage.style.height='200px';
 stagedata.stage.id='stage';
 
 stagedata.textarea=document.createElement('div');
-stagedata.textarea.style.width='100%';
+stagedata.textarea.style.width=window.innerWidth-60;
 stagedata.textarea.style.height='200px';
 stagedata.textarea.id='textarea';
 

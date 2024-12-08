@@ -8,6 +8,13 @@ div#textarea{
     margin-left: 30px;
     margin-right: 30px;
     display: inline-block;
+    color: white;
+    
+}
+img.monster{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 div#effect{
     height: 100%;
