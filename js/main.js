@@ -41,6 +41,6 @@ addEventListener('load',async function(){
     //レベルに応じてモンスターを出す
     console.log(monsterdata)
     themmonstar = await monsterplus(monsterdata,level);
-    await textdot(`${themmonstar.name}が現れた! ステータス情報.... HP:${themmonstar.hp},貰える経験値:${themmonstar.xp},攻撃力:${themmonstar.attack},防御力:${themmonstar.guard}です!`,stagedata.textarea,0.1,30);
+    await textdot(`${themmonstar.name}が現れた!`,stagedata.textarea,0.1,30);
     
 });

@@ -1,4 +1,7 @@
-const WaitForClick = async () => new Promise(resolve => document.addEventListener("keydown", resolve));
+const WaitForClick = async () => new Promise(resolve => {document.addEventListener("keydown", resolve);window.addEventListener("click", resolve)});
+
+var text_running = false;
+
 /**
  * 
  * @param {string} text
@@ -7,6 +10,7 @@ const WaitForClick = async () => new Promise(resolve => document.addEventListene
  * @param {TextSizepx} textpx 
  */
 async function textdot(text,textarea,time,textpx){
+    text_running=true;
     console.log(text)
     let data2=text.split('');
     let data3=(window.innerWidth-(textpx*2))/textpx;
@@ -19,6 +23,8 @@ async function textdot(text,textarea,time,textpx){
         console.log(data4);
         await wait(time);
     }
+    text_running = false;
+    console.log('Text Waiting now...')
     await WaitForClick();
     textarea.innerHTML='';
 }
