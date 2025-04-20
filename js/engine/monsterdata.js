@@ -16,6 +16,15 @@ monsterdata.easy=[
         "xp":10,
         "magic":'none'
     },
+    {
+        "img":'/img/monster/easy/flower_spirit.png',
+        "name":'花の精霊',
+        "attack":8,
+        "guard":8,
+        "hp":30,
+        "xp":15,
+        "magic":'none'
+    },
 ];
 monsterdata.midium=[];
 monsterdata.hard=[];
